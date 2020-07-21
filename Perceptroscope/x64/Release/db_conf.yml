@@ -1,0 +1,7 @@
+---
+###Influx database configuration file (name of the file is corresponding to configuration name)
+
+name: 'sandbox'                             #database name in Influx service module
+measurementName: 'mainAndSingleMeasurement' #measurement name in desired database
+endpoint: 'http://localhost:8086/'          #endpoint of Influx service with port and app layer protocol
+dataPerRequestBufferSize: 1                 #size of dataBuffer (measures in Influx queries)

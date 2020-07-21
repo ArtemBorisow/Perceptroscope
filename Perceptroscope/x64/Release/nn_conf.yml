@@ -1,0 +1,24 @@
+---
+###neural network configuration file (name of the file is corresponding to configuration name)
+
+##amount of neural networks
+NNAmount: 11
+##structure configuration (for all units: integer type)
+structure:
+    inputLayer: 2           #amount of input neurons
+    hiddenLayers: [5, 3]    #amount of hidden neurons in each hidden layer
+    outputLayer: 1          #amount of output neurons
+##back propagation learning macro parameters
+BP_learningParams:
+    AoLCI: 6000             #amount of learning cycle iterations (integer type)
+    learningRate: 0.1       #learning rate (float type)
+    logEpochInfo: false     #log basic information for each learning iteration (boolean type)
+    trainingSetArray:       #array of all training sets for learning algorithm (for all units: integer type)
+    -   inputs: [1, 1]
+        outputs: [0]
+    -   inputs: [0, 1]
+        outputs: [1]
+    -   inputs: [1, 0]
+        outputs: [1]
+    -   inputs: [0, 0]
+        outputs: [0]
